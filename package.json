@@ -1,0 +1,20 @@
+{
+  "name": "decke-std",
+  "version": "0.1.0",
+  "description": "Standard library packages for Typescript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/dhruvrajvanshi/decke-std",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "author": "Dhruv Rajvanshi <dhruv@rajv.dev>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.12.4",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "$schema": "https://json.schemastore.org/package"
+}
