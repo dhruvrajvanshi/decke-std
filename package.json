@@ -1,6 +1,6 @@
 {
   "name": "decke-std",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Standard library packages for Typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
