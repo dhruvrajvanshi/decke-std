@@ -19,11 +19,10 @@ export function assert(condition: unknown, message?: string): asserts condition 
   }
 }
 
-export function todo(template: TemplateStringsArray, ...args: unknown[]): never
-export function todo(): never
-export function todo(message: string): never
-export function todo(message: unknown): never
-export function todo(first?: unknown, ...args: unknown[]): never {
+export function TODO(): never
+export function TODO(message: string): never
+export function TODO(message: unknown): never
+export function TODO(first?: unknown, ...args: unknown[]): never {
   let message: string
   if (first === undefined) {
     message = "TODO"
@@ -42,7 +41,7 @@ export function todo(first?: unknown, ...args: unknown[]): never {
   } else {
     message = inspect(first)
   }
-  throwAt(new Error(message), todo);
+  throwAt(new Error(message), TODO);
 }
 
 function inspect(value: unknown): string {
